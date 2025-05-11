@@ -1,21 +1,13 @@
 ﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Inicio";
-    ViewData["Selected"] = ""; // No activamos ningún ítem de navbar
 }
 
 <div class="text-center mt-5">
+    <h1 class="mb-4">¡Bienvenido a PizzaExpress!</h1>
+    <p class="lead">Armá tu pizza personalizada eligiendo la masa e ingredientes.</p>
 
-    <!-- Logo -->
-    <img src="~/img/Logo/Logo PE.png" alt="Logo PizzaExpress" class="img-fluid" style="max-width: 200px;" />
-
-    <!-- Texto principal -->
-    <h1 class="mt-4">¡Bienvenido a PizzaExpress!</h1>
-    <p class="lead mt-3">Armá tu pizza personalizada eligiendo la masa e ingredientes a tu gusto.</p>
-
-    <!-- Botón para empezar -->
-    <a asp-controller="Pizza" asp-action="Index" class="btn btn-lg btn-warning mt-4">
+    <a asp-controller="Pizza" asp-action="Index" class="btn btn-lg btn-warning">
         🍕 Empezar a armar mi pizza
     </a>
-
-
 </div>
