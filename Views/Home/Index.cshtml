@@ -1,8 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mt-5">
+    <h1 class="mb-4">¡Bienvenido a PizzaExpress!</h1>
+    <p class="lead">Armá tu pizza personalizada eligiendo la masa e ingredientes.</p>
+
+    <a asp-controller="Pizza" asp-action="Index" class="btn btn-lg btn-warning">
+        🍕 Empezar a armar mi pizza
+    </a>
 </div>

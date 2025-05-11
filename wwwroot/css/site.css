@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.navbar-nav .nav-link.nav-selected {
+    color: #D55C05 !important;
+}
