@@ -24,3 +24,7 @@ body {
 .navbar-nav .nav-link.nav-selected {
     color: #D55C05 !important;
 }
+
+.navbar-custom {
+    background-color: #4b3216 !important;
+}
