@@ -1,14 +1,28 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Inicio";
+    ViewData["Selected"] = "";
 }
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <div class="text-center mt-5">
-    <h1 class="mb-4">¡Bienvenido a PizzaExpress!</h1>
-    <p class="lead">Armá tu pizza personalizada eligiendo la masa e ingredientes.</p>
+    <img src="~/img/Logo/Logo PE.png" alt="Logo PizzaExpress" class="img-fluid" style="max-width: 200px;" />
 
-    <a asp-controller="Pizza" asp-action="Index" class="btn btn-lg btn-warning">
+    <h1 class="mt-4">¡Bienvenido a PizzaExpress!</h1>
+    <p class="lead">Armá tu pizza personalizada eligiendo la masa e ingredientes a tu gusto.</p>
+
+    <a href="#" class="btn btn-lg btn-warning mt-4" onclick="mostrarToastConRedireccion(); return false;">
         🍕 Empezar a armar mi pizza
     </a>
+
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="toastPizza" class="toast align-items-center text-white border-0" role="alert" style="background-color: #d2691e;">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Redirigiendo al armador de pizzas...
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
